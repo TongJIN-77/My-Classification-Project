@@ -8,9 +8,11 @@ function setup() {
   video = createCapture(VIDEO);
   video.size(400, 300);
   //video.hide();
-  createButton("Take a picture").mousePressed(btnClicked);
+  //createButton("").mousePressed(btnClicked);
+  var myVar = setInterval(btnClicked, 3000);
   
 }
+
 
 function classifyDone(res) {
   print(res);
@@ -27,7 +29,7 @@ function classifyDone(res) {
     }
   
   else{
-      alert("None of the three objects in the picture");
+     // alert("None of the three objects in the picture");
   }
   
 }
