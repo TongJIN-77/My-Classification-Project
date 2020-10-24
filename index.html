@@ -1,21 +1,23 @@
-<!DOCTYPE html><html><head>
-    <script src="p5.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
   </head>
   <body>
     <!-- Load TensorFlow.js. This is required to use MobileNet. -->
-    <script src="tfjs@1.0.1"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
     <!-- Load the MobileNet model. -->
-    <script src="mobilenet@1.0.0"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
     <script src="sketch.js"></script>
     
     <!-- Feel free to modify everything below this line ;) -->
-    <h2>Welcome to my classification projet</h2>
-    <p>This Project Would Classify The Object In The Image You've Taken...</p>
-    <p>Currently, We Can Classify THREE Objects Only, 'Mobile Phone', 'Water Bottle' and 'Coffee Mug'</p>
-  
-
-</body></html>
+    <h2>Welcome To My Classification Projet</h2>
+    <p>This project would classify the object in the image, currently, it can classify THREE objects only, 'Mobile Phone', 'Water Bottle' and 'Coffee Mug'</p>
+    <p>This application is taking a picture automaticly on every 3 seconds. A message box would popup if the object is be classified correctly.</p>
+    
+  </body>
+</html>
